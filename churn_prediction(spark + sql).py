@@ -170,7 +170,7 @@ class customer_churn:
 					select * 
 					from  ( 
 						select product from customer_churn 
-						) as sorce_function 
+						) source_function
 					pivot ( 
 						count( products), 
 						for product in ( 'apple','banana') 
